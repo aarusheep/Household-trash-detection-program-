@@ -1,0 +1,12 @@
+//terminal
+curl -L "https://app.roboflow.com/ds/WfTQU8eIBH?key=8LGl6THRgu" > roboflow.zip; unzip roboflow.zip; rm roboflow.zip
+// jupyter
+!pip install roboflow
+
+from roboflow import Roboflow
+rf = Roboflow(api_key="jIvUQ5SKKygAe9OkEGNS")
+project = rf.workspace("household-waste-detecting-drone-via-object-detection").project("household-trash-image-detect")
+version = project.version(1)
+dataset = version.download("yolov8")
+
+
