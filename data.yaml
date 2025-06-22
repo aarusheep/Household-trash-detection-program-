@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['milk packet']
+
+roboflow:
+  workspace: household-waste-detecting-drone-via-object-detection
+  project: milk-packet-646z3
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/household-waste-detecting-drone-via-object-detection/milk-packet-646z3/dataset/1
